@@ -1,4 +1,4 @@
-// How to compare two JSON have the same properties without order?
+// Q1.How to compare two JSON have the same properties without order?
 // a. var obj1={nameL:"Person 1",age:5}
 // b. var obj2={name:"Person2", age:5}
 
@@ -20,7 +20,7 @@ else{
 }
 
 
-//Use the rest countries API and display all the country flag in console.
+//Q2.Use the rest countries API and display all the country flag in console.
 var req=new XMLHttpRequest();
 req.open('GET','https://restcountries.com/v3.1/all')
 req.send()
@@ -30,7 +30,7 @@ var countries=data.map(country=>
     console.log(country.flags.png))
 }
  
-// Use the same rset countries API and print all countries name, regions, sub-region and population
+// Q3.Use the same rset countries API and print all countries name, regions, sub-region and population
 var req=new XMLHttpRequest();
 req.open('GET','https://restcountries.com/v3.1/all')
 req.send()
